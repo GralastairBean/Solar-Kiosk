@@ -1,0 +1,17 @@
+#!/bin/bash
+xset s noblank
+xset s off
+xset -dpms
+
+unclutter -idle 0.5 -root &
+
+sed -i 's/"exited_cleanly":false/"exited_cleanly":true/' /home/pi/.config/chromium/Default/Preferences
+sed -i 's/"exit_type":"Crashed"/"exit_type":"Normal"/' /home/pi/.config/chromium/Default/Preferences
+
+/usr/bin/chromium-browser --noerrdialogs --disable-infobars --kiosk https://sdo.gsfc.nasa.gov/assets/img/latest/latest_1024_0171.jpg https://sdo.gsfc.nasa.gov/assets/img/latest/latest_1024_HMIIC.jpg https://sohowww.nascom.nasa.gov/data/synoptic/sunspots_earth/mdi_sunspots_1024.jpg https://sdo.gsfc.nasa.gov/assets/img/latest/latest_1024_HMIB.jpg &
+
+while true; do
+   xdotool keydown ctrl+r; xdotool keyup ctrl+r;
+   xdotool keydown ctrl+Tab; xdotool keyup ctrl+Tab;
+   sleep 10
+done
