@@ -2,7 +2,8 @@
 
 We are now in solar cycle 25. The north pole on the sun has had a negative charge for the last 14 years. The polarity of the sun's north pole has just recently changed to positive. Now the south pole of the sun is in the process of changing polarity from positive to negative.
 
-Sunspots generally group together in pairs to form the poles of solar magnets. One sunspot of each bipolar pair has positive ("north", or outward -directed) magnetic polarity. Its partner has the opposite negative ("south", or inward-directed) polarity. Look at the groups of bipolar sunpots in the active sun image above. Notice that each spot group seems to contain black and white members. Notice too that the groups are usually oriented roughly parallel to the Sun's equator.
+Sunspots generally group together in pairs to form the poles of solar magnets. One sunspot of each bipolar pair has positive ("north", or outward -directed) magnetic polarity. Its partner has the opposite negative ("south", or inward-directed) polarity. Magnetograms show "line-of-sight" magnetic fields (that is, those either coming directly towards us or going away from us). White color corresponds to positive and black is negative polarity field.
+Look at the groups of bipolar sunpots in the active sun image above. Notice that each spot group seems to contain black and white members. Notice too that the groups are usually oriented roughly parallel to the Sun's equator. Leading sunspot matches hemisphere polarity.
 
 
 1. SDO HMI Intensitygram - colored
@@ -21,7 +22,7 @@ Characteristic temperature: 1 million K (1.8 million F)
 3. SDO HMI Magnetogram
 White is north
 Black is south
-Magnetograms show "line-of-sight" magnetic fields (that is, those either coming directly towards us or going away from us). The darkest areas are regions of "south" magnetic polarity (inward directed, or moving toward the center of the Sun) and the whiter regions "north" (outward directed, moving toward us) polarity.
+Magnetograms show "line-of-sight" magnetic fields (that is, those either coming directly towards us or going away from us). White color corresponds to positive and black is negative polarity field.
 
 
 ***************************************************
