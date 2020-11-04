@@ -20,8 +20,8 @@ Characteristic temperature: 1 million K (1.8 million F)
 
 ***************************************************
 3. SDO HMI Magnetogram
-White is north
-Black is south
+White is positive
+Black is negative
 Magnetograms show "line-of-sight" magnetic fields (that is, those either coming directly towards us or going away from us). White color corresponds to positive and black is negative polarity field.
 
 
