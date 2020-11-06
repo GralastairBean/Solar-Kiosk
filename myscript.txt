@@ -1,0 +1,47 @@
+#python script that runs on boot (see main readme) and detects GPIO button press to change tab
+
+
+from pynput.keyboard import Key, Controller
+import time
+import RPi.GPIO as GPIO
+
+previousTime = 0
+refreshInterval = 600 #seconds
+
+keyboard = Controller()
+GPIO.setmode(GPIO.BOARD)
+buttonPin = 10 #only certain pins are ok to use with pull up down, see the pinout
+
+GPIO.setup(buttonPin, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+
+#function that checks the button state
+def checkButton():
+    buttonState = GPIO.input(buttonPin)
+    if buttonState == False:
+        print("Button Pressed")
+        keyboard.press(Key.ctrl)
+        keyboard.press(Key.tab)
+        time.sleep(0.1)
+        keyboard.release(Key.ctrl)
+        keyboard.release(Key.tab)
+        time.sleep(0.1)
+        keyboard.press(Key.ctrl)
+        keyboard.press('R')
+        time.sleep(0.1)
+        keyboard.release(Key.ctrl)
+        keyboard.release('R')
+
+
+while True:
+    checkButton()
+    
+        
+    
+        
+    
+        
+
+
+
+
+
