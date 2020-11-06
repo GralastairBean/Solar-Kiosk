@@ -33,6 +33,7 @@
 
 
 ############## CRONTAB ##############
+REMOVED ALL CRONTAB AS IT WASN'T WORKING, USING A MODIFIED AUTOSTART FILE INSTEAD SEE "BUTTON" ABOVE
 https://www.raspberrypi-spy.co.uk/2013/07/running-a-python-script-at-boot-using-cron/
 
 
