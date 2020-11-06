@@ -1,5 +1,43 @@
 # Solar-Disk-Kiosk
 
+################### Setup ################### 
+
+[guide: https://pimylifeup.com/raspberry-pi-kiosk/]
+
+1. We create a file in the home directory called "kiosk.sh"
+2. This file stops various functions like screen saver and mouse diaply, opens the chromium tabs and then changes tab using xdotool to simulate ctl+tab keydown strokes.
+3. We tell the pi to autorun the kiosk.sh file on boot by editing the kiosk.service system file then running:
+   sudo systemctl enable kiosk.service
+   in the terminal
+4. kiosk auto starts on boot, to stop it use: sudo systemctl stop kiosk.service
+5. to start it again either reboot or use: sudo systemctl start kiosk.service
+6. to check status and see any errors in the kiosk mode use: sudo systemctl status kiosk.service
+7. to stop the kiosk mode from running at boot use: sudo systemctl disable kiosk.service
+8. to re-enable kiosk mode at start use: sudo systemctl enable kiosk.service
+
+
+################### BUTTON ################### 
+
+1. autostart file is in /etc/xdg/lxsession/LXDE-pi/autostart
+2. It runs at startup and starts a python script that detects a button input to change tab
+
+3. in terminal type: sudo /etc/xdg/lxsession/LXDE-pi/autostart
+4. this brings up the autostart file so you can edit it
+5. we add as last line: python /home/pi/myscript.py
+6. press ctrl+x, then y, then enter to save 
+7. to stop this script from auto running just delete these lines and save as per line 6
+
+
+
+
+
+
+############## CRONTAB ##############
+https://www.raspberrypi-spy.co.uk/2013/07/running-a-python-script-at-boot-using-cron/
+
+
+################### Scientific Data ################### 
+
 We are now in solar cycle 25. The north pole on the sun has had a negative charge for the last 14 years. The polarity of the sun's north pole has just recently changed to positive. Now the south pole of the sun is in the process of changing polarity from positive to negative.
 
 Sunspots generally group together in pairs to form the poles of solar magnets. One sunspot of each bipolar pair has positive ("north", or outward -directed) magnetic polarity. Its partner has the opposite negative ("south", or inward-directed) polarity. Magnetograms show "line-of-sight" magnetic fields (that is, those either coming directly towards us or going away from us). White color corresponds to positive and black is negative polarity field.
