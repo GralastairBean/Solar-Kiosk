@@ -21,7 +21,7 @@
 1. autostart file is in /etc/xdg/lxsession/LXDE-pi/autostart
 2. It runs at startup and starts a python script that detects a button input to change tab
 
-3. in terminal type: sudo /etc/xdg/lxsession/LXDE-pi/autostart
+3. in terminal type: sudo nano /etc/xdg/lxsession/LXDE-pi/autostart
 4. this brings up the autostart file so you can edit it
 5. we add as last line: python /home/pi/myscript.py
 6. press ctrl+x, then y, then enter to save 
