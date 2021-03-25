@@ -1,5 +1,33 @@
 # Solar-Disk-Kiosk
 
+################### Scientific Data ################### 
+
+0. OVERVIEW
+
+The Solar Dynamics Observatory (SDO) is a NASA mission launched into a geosynchronous orbit on 11 February 2010, the observatory is part of the Living With a Star (LWS) program.
+
+We are now in solar cycle 25. The north pole on the sun has had a negative charge for the last 14 years. The polarity of the sun's north pole has just recently changed to positive. Now the south pole of the sun is in the process of changing polarity from positive to negative.
+
+Sunspots generally group together in pairs to form the poles of solar magnets. One sunspot of each bipolar pair has positive ("north", or outward -directed) magnetic polarity. Its partner has the opposite negative ("south", or inward-directed) polarity. Magnetograms show "line-of-sight" magnetic fields (that is, those either coming directly towards us or going away from us). White color corresponds to positive and black is negative polarity field.
+Look at the groups of bipolar sunpots in the active sun image above. Notice that each spot group seems to contain black and white members. Notice too that the groups are usually oriented roughly parallel to the Sun's equator. Leading sunspot matches hemisphere polarity.
+
+1. SDO AIA 171 Å = 17.1 nm = EUV
+Emitted by iron-9 (Fe IX) at around 600,000 Kelvin. This wavelength shows the quiet corona and coronal loops, and is typically colorized in gold. This channel is especially good at showing coronal loops - the arcs extending off of the Sun where plasma moves along magnetic field lines. The brightest spots seen here are locations where the magnetic field near the surface is exceptionally strong.
+
+2. SDO HMI Continuum = visible light 
+Continuums provide photographs of the solar surface, incorporating a broad range of visible light appearing yellow and orange. 
+
+3. SOHO HMI visible light Black and White
+Highlights sunpots and shows scale.
+
+4. SDO HMI Magnetogram
+White is positive
+Black is negative
+Magnetograms show "line-of-sight" magnetic fields (that is, those either coming directly towards us or going away from us). White color corresponds to positive and black is negative polarity field.
+
+5. SDO AIA 304 Å = 30.4 nm = EUV
+Emitted by helium-2 (He II) at around 50,000 Kelvin. This light is emitted from the chromosphere and transition region. SDO images of this wavelength are typically colorized in red. 
+
 ################### Setup ################### 
 
 [guide: https://pimylifeup.com/raspberry-pi-kiosk/]
@@ -37,32 +65,3 @@ REMOVED ALL CRONTAB AS IT WASN'T WORKING, USING A MODIFIED AUTOSTART FILE INSTEA
 https://www.raspberrypi-spy.co.uk/2013/07/running-a-python-script-at-boot-using-cron/
 
 
-################### Scientific Data ################### 
-
-We are now in solar cycle 25. The north pole on the sun has had a negative charge for the last 14 years. The polarity of the sun's north pole has just recently changed to positive. Now the south pole of the sun is in the process of changing polarity from positive to negative.
-
-Sunspots generally group together in pairs to form the poles of solar magnets. One sunspot of each bipolar pair has positive ("north", or outward -directed) magnetic polarity. Its partner has the opposite negative ("south", or inward-directed) polarity. Magnetograms show "line-of-sight" magnetic fields (that is, those either coming directly towards us or going away from us). White color corresponds to positive and black is negative polarity field.
-Look at the groups of bipolar sunpots in the active sun image above. Notice that each spot group seems to contain black and white members. Notice too that the groups are usually oriented roughly parallel to the Sun's equator. Leading sunspot matches hemisphere polarity.
-
-
-1. SDO HMI Intensitygram - colored
-
-
-***************************************************
-2. SDO AIA 171 Å 
-This channel is especially good at showing coronal loops - the arcs extending off of the Sun where plasma moves along magnetic field lines. The brightest spots seen here are locations where the magnetic field near the surface is exceptionally strong.
-Where: Quiet corona and upper transition region
-Wavelength: 171 angstroms (0.0000000171 m) = Extreme Ultraviolet
-Primary ions seen: 8 times ionized iron (Fe IX)
-Characteristic temperature: 1 million K (1.8 million F)
-
-
-***************************************************
-3. SDO HMI Magnetogram
-White is positive
-Black is negative
-Magnetograms show "line-of-sight" magnetic fields (that is, those either coming directly towards us or going away from us). White color corresponds to positive and black is negative polarity field.
-
-
-***************************************************
-4. SOHO Helioseismic and Magnetic Imager (HMI)
